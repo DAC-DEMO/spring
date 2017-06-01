@@ -18,5 +18,15 @@
 ASS2 :: Check Singleton Type.
 ASS3 :: Create Multiple Bean.
 
+>> Constructor
+>> Multiple Property
+>> Multiple Object; Refence variable
+>> Working with collection.
 
+
+>> Object with Collections.
+	List<Employee> empList;
+	
+	
+	
 

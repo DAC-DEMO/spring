@@ -1,17 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   
-   xsi:schemaLocation="http://www.springframework.org/schema/beans
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans.xsd">
-   
-   <bean id="first" name="first, first1" class="com.dac.spring.Employee">
-   		<property name="id" value="100"></property>
-   </bean>
-   
-   
-   <bean id="second" name="second" class="com.dac.spring.Employee">
-   		<property name="id" value="200"></property>
-   </bean>
-   
+
+	<bean id="first" name="first, first1" class="com.dac.spring.Employee">
+		<property name="id" value="100"></property>
+		<property name="name" value="Sheetal"></property>
+	</bean>
+	
+	<bean id="second" name="second" class="com.dac.spring.Employee">
+		<property name="id" value="100"></property>
+		<property name="name" value="Akshay"></property>
+		
+		<property name="deptList">
+			<list>
+				<value>RnD</value>
+				<value>HR</value>
+			</list>
+		</property>
+		
+		
+		<property name="emailList">
+			<set>
+				<value>abcd@abc.com</value>
+				<value>abcd@abc.com</value>
+			</set>
+		</property>
+	</bean>
+
+	<bean id="p1" name="p1" class="com.dac.spring.Project">
+		<property name="dept" value="RnD"></property>
+		<property name="emp" ref="second"></property>
+	</bean>
+	
+	
+	
+
 </beans>
+
+
+
+
+
+
+
+
+

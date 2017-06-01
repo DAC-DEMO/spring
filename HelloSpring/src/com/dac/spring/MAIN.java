@@ -10,10 +10,8 @@ public class MAIN {
 	
 	public static void main(String[] args) {
 		
-		Employee emp = (Employee)context.getBean("first1");
-		emp.setName("Hello");
-		
-		Employee emp1 = (Employee)context.getBean("first1");
-		System.out.println(emp1.getName());
+		Project ref = (Project)context.getBean("p1");
+		System.out.println(ref.getDept());
+		System.out.println(ref.getEmp().getName());
 	}
 }
