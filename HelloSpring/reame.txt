@@ -27,6 +27,6 @@ ASS3 :: Create Multiple Bean.
 >> Object with Collections.
 	List<Employee> empList;
 	
-	
+>> Autowire
 	
 
