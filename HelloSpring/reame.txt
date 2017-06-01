@@ -1,0 +1,22 @@
+>> PROJECT SETUP.
+
+>> Crate XML file, beans.xml, at classpath. In eclipse
+	at src folder.
+	
+>> Google spring xml configruation.
+
+>> Create bean in beans.xml
+
+
+>> MAIN PROGRAM
+	LOAD THE CONTAINER and beans.xml
+	
+	getBean();
+	
+	
+>> Ass1 :: HelloWorld.
+ASS2 :: Check Singleton Type.
+ASS3 :: Create Multiple Bean.
+
+
+
