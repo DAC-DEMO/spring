@@ -5,13 +5,13 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MAIN {
 
-	static ApplicationContext context = new ClassPathXmlApplicationContext("day2.xml");
+	static ApplicationContext context = new ClassPathXmlApplicationContext("day2-1.xml");
 	
 	public static void main(String[] args) {
 		
 		System.out.println("Hello world");
 		PostDao postDao = (PostDao)context.getBean("postDao");
-		postDao.updatePost();
+		postDao.readAllWithSpring();;
 		
 	}
 	

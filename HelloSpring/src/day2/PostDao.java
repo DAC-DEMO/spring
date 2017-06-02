@@ -58,9 +58,11 @@ public class PostDao {
 	}
 
 	public void readAllWithSpring() {
+		
 		String sql = "SELECT * FROM POST";
 		List<Map<String, Object>> list = jdbcTemplate.queryForList(sql);
 		System.out.println(list);
+		
 	}
 	
 	public void updatePost() {
