@@ -22,6 +22,11 @@
 		
 		
 >> Update the xml file with mvc namepspace.
+	beans >>
+		beans
+		context
+		aop
+		mvc
 
 >> update the xml, 
 	NOTE :: <context:component-scan base-package="com.web.mvc"></context:component-scan>		
