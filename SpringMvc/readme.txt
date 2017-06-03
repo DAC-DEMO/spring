@@ -9,10 +9,12 @@
 	>> MYSQL CONNECTOR/DRIVER
 	>> ASPECTS
 	>> MVC
+	>> JACKSON (CORE/DATABINDING/ANNOTATION)
 	
 	
 >> Update web.xml file. 
 	>> creating servlet mapping.
+	>> CORS FiLTER.
 	
 >> Create sping xml file, 
 	NOTE :: the name of the xml file will be as per the name of your servlet. 
