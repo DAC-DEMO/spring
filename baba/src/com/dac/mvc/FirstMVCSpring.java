@@ -62,8 +62,11 @@ public class FirstMVCSpring {
 	}
 	
 	@PostMapping("upload")
-	public String imageUpload(@RequestParam CommonsMultipartFile file, HttpServletRequest request){
-		return "Hello world";
+	public PostClass imageUpload(@RequestParam CommonsMultipartFile file, HttpServletRequest request){
+		System.out.println(request.getParameter("title"));
+		PostClass ps = new PostClass();
+		ps.setPost("True King of the North");
+		return ps;
 	}
 }
 
