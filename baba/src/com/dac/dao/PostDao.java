@@ -34,8 +34,8 @@ public class PostDao {
 	}
 
 	public void insertPost(PostClass post){
-		String sql="INSERT INTO POST (POST) VALUES(?)";
-		jdbcTemplate.update(sql,post.getPost());
+		String sql="INSERT INTO POST (POST, LIKE_COUNT, DISLIKE_COUNT) VALUES(?, ?, ?)";
+		jdbcTemplate.update(sql,post.getPost(), post.getLike_count(), post.getDislike_count());
 	}
 
 }
